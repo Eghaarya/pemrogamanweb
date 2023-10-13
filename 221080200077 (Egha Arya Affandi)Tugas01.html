@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egha Arya Affandi (221080200077)</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+            background-color: #d2d4d2;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .card {
+            margin: 30px 10px 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 570px;
+            background-color: #f6f6f6;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+
+        .action {
+            margin: 20px 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .custom-button {
+            margin-right: 10px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: white;
+            border: 1px solid #297fb8;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .custom-button:hover {
+            color: white;
+            background-color: #297fb8;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 10;
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            border: 1px solid #297fb8;
+        }
+
+        .close {
+            padding: 0 3px;
+            background-color: #555;
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
+        .custom-dropdown {
+            width: 130px;
+            padding: 10px;
+            border: 1px solid #297fb8;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            padding: 0;
+            margin: 0;
+            margin-top: 20px;
+        }
+
+        .card img {
+            width: 40%;
+            height: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            align-self: center;
+        }
+
+        .card hr {
+            border: 1px solid #555;
+            margin: 10px 0;
+        }
+
+        .card-info {
+            opacity: 0;
+            animation: slideIn 1s forwards;
+        }
+
+        .card-info {
+            padding-bottom: 40px;
+            width: 85%;
+        }
+
+        .card-info p {
+            text-align: start;
+            padding: 0 10px;
+            margin: 5px;
+        }
+
+        .rangkuman {
+            padding: 10px;
+            border-top: 1px solid #297fb8;
+            border-bottom: 1px solid #297fb8;
+            display: grid;
+            grid-template-columns: 0.3fr 10px 2fr;
+            gap: 10px;
+        }
+
+        .rangkuman .judul {
+            font-weight: bold;
+        }
+
+        .card-isi {
+            display: grid;
+            grid-template-columns: 1fr 10px 2fr;
+            gap: 10px;
+        }
+
+        .card-isi p {
+            align-self: center;
+        }
+
+        ul li span {
+            float: right;
+        }
+
+        .judul,
+        .titik-dua,
+        .isi {
+            display: grid;
+            grid-template-rows: repeat(5, 1fr);
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 90%;
+            }
+
+            .modal {
+                width: 700px;
+            }
+
+            .rangkuman {
+                font-size: 15px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- isi -->
+    <div class="container">
+        <div class="card">
+            <div class="action">
+                <button class="custom-button" id="openModalBtn">Rangkuman</button>
+                <div class="modal" id="myModal">
+                    <div class="modal-content">
+                        <span class="close" id="closeModalBtn">&times;</span>
+                        <h3 style="text-align: center;">- Rangkuman -</h3>
+                        <div class="rangkuman">
+                            <div class="judul">
+                                <p>&lt;STRIKE&gt;</p>
+                                <p>&lt;I&gt;</p>
+                                <p>&lt;B&gt;</p>
+                                <p>&lt;U&gt;</p>
+                                <p>&lt;SMALL&gt;</p>
+                                <p>&lt;BIG&gt;</p>
+                                <p>&lt;TT&gt;</p>
+                                <p>&lt;SUB&gt;</p>
+                                <p>&lt;SUP&gt;</p>
+                            </div>
+                            <div class="titik-dua">
+                                <p>:</p>
+                                <p>:</p>
+                                <p>:</p>
+                                <p>:</p>
+                                <p>:</p>
+                                <p>:</p>
+                                <p>:</p>
+                                <p>:</p>
+                            </div>
+                            <div class="isi">
+                                <P>Mengatur teks menjadi strikethrough/ bergaris tengah</P>
+                                <P>Mengatur teks menjadi terlihat miring</P>
+                                <P>Mengatur teks menjadi tebal</P>
+                                <P>Mengatur teks bergaris bawah</P>
+                                <P>Mengatur teks terlihat lebih kecil daripada ukuran normal</P>
+                                <P>Mengatur teks terlihat lebih besar dari ukuran normal</P>
+                                <P>Mengatur teks terlihat seperti ketikan mesin ketik</P>
+                                <P>Mengatur teks menjadi subskrip</P>
+                                <P>Mengatur teks menjadi superskrip</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <select class="custom-dropdown" id="styleSelector" onchange="applyStyle()">
+                    <option value="Normal">Normal</option>
+                    <option value="Strike">Strike</option>
+                    <option value="Italic">Italic</option>
+                    <option value="Bold">Bold</option>
+                    <option value="Underlined">Underlined</option>
+                    <option value="Small">Small</option>
+                    <option value="BIG">BIG</option>
+                    <option value="Typewriter">Typewriter</option>
+                    <option value="Subskrip">Subskrip</option>
+                    <option value="Superskrip">Superskrip</option>
+                </select>
+            </div>
+            <img src="https://www.nicepng.com/png/detail/202-2024580_png-file-profile-icon-vector-png.png"
+                alt="Foto Profil">
+            <div class="card-info">
+                <h2>Profil</h2>
+                <hr>
+                <div class="card-isi">
+                    <div class="judul">
+                        <p>Nama</p>
+                        <p>Jenis Kelamin</p>
+                        <p>TTL</p>
+                        <p>Agama</p>
+                        <p>Alamat</p>
+                        <p>No. Telp</p>
+                    </div>
+                    <div class="titik-dua">
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                        <p>:</p>
+                    </div>
+                    <div class="isi">
+                        <p>Egha Arya <span class="target1">Affandi</span></p>
+                        <p>Laki - <span class="target2">Laki</span></p>
+                        <p>Mojokerto, <span class="target3">17 Juli 2004</span></p>
+                        <p>Islam</p>
+                        <p>Jl. Pulang dan Berkah <span class="target4">Satu Sama Lain, No. 170</span></p>
+                        <p><a href="https://api.whatsapp.com/send?phone=6281259898700" style="text-decoration: none;"
+                                target="_blank">+62
+                                812-5989-8700</a></p>
+                    </div>
+                </div>
+                <br>
+                <h2>Pendidikan</h2>
+                <hr>
+                <ul>
+                    <li>Universitas Muhammadiyah Sidoarjo <span>( 2022 - Sekarang )</span></li>
+                    <li>SMK Negeri 1 Jetis Mojokerto <span>( 2019 - 2022 )</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script>
+        const openModalBtn = document.getElementById("openModalBtn");
+        const closeModalBtn = document.getElementById("closeModalBtn");
+        const modal = document.getElementById("myModal");
+
+        openModalBtn.addEventListener("click", function () {
+            modal.style.display = "block";
+        });
+
+        closeModalBtn.addEventListener("click", function () {
+            modal.style.display = "none";
+        });
+
+        function applyStyle() {
+            modal.style.display = "none";
+
+            let styleSelector = document.getElementById("styleSelector");
+            let cardInfo = document.querySelector(".card-info");
+            let target1 = document.querySelector(".target1");
+            let target2 = document.querySelector(".target2");
+            let target3 = document.querySelector(".target3");
+            let target4 = document.querySelector(".target4");
+
+            let selectedValue = styleSelector.value;
+
+            function clearStyle() {
+                cardInfo.style.fontStyle = "normal";
+                cardInfo.style.fontWeight = "normal";
+                cardInfo.style.textDecoration = "none";
+                cardInfo.style.fontSize = "inherit";
+                cardInfo.style.fontFamily = "inherit";
+                target1.style.verticalAlign = "baseline";
+                target2.style.verticalAlign = "baseline";
+                target3.style.verticalAlign = "baseline";
+                target4.style.verticalAlign = "baseline";
+            };
+            clearStyle();
+
+            switch (selectedValue) {
+                case "Normal":
+                    clearStyle();
+                    break;
+                case "Strike":
+                    cardInfo.style.textDecoration = "line-through";
+                    break;
+                case "Italic":
+                    cardInfo.style.fontStyle = "italic";
+                    break;
+                case "Bold":
+                    cardInfo.style.fontWeight = "bold";
+                    break;
+                case "Underlined":
+                    cardInfo.style.textDecoration = "underline";
+                    break;
+                case "Small":
+                    cardInfo.style.fontSize = "small";
+                    break;
+                case "BIG":
+                    cardInfo.style.fontSize = "x-large";
+                    break;
+                case "Typewriter":
+                    cardInfo.style.fontFamily = "monospace";
+                    break;
+                case "Subskrip":
+                    target1.style.verticalAlign = "sub";
+                    target2.style.verticalAlign = "sub";
+                    target3.style.verticalAlign = "sub";
+                    target4.style.verticalAlign = "sub";
+                    break;
+                case "Superskrip":
+                    target1.style.verticalAlign = "super";
+                    target2.style.verticalAlign = "super";
+                    target3.style.verticalAlign = "super";
+                    target4.style.verticalAlign = "super";
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

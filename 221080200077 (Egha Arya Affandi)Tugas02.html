@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>221080200077 (Egha Arya Affandi)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            padding-top: 20px;
+        }
+
+        select {
+            display: block;
+            padding: 5px;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #fff;
+            display: block;
+        }
+
+        .navbar {
+            display: none;
+            border-bottom: 1px solid #224585;
+            padding: 20px;
+        }
+
+        .navbar a {
+            margin-right: 10px;
+            background-color: #224585;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover,
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        #content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .container {
+            overflow-x: auto;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none;
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #content {
+                margin: 0;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img {
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <select>
+            <option><a
+                    href="https://drive.google.com/drive/folders/1HblBLBdFhjc0XkwrMOTUPIpXvlB9kL_a/221080200077 (Egha Arya Affandi)Tugas01.html">Tugas
+                    01</a></option>
+            <option selected><a href="#">Tugas 02</a></option>
+        </select>
+        <img src="https://umsida.ac.id/wp-content/uploads/2023/09/logo-umsida-scaled.jpg" alt="logo" width="200"
+            style="margin-left: 20px; border-radius: 10%; border: 6px solid #224585;">
+        <a href="#" id="nestedList" onclick="nestedList()">Nested List</a>
+        <a href="#" id="imageList" onclick="imageList()">Image</a>
+        <a href="#" id="table" onclick="table()">Tables</a>
+    </div>
+    <div id="content">
+        <div class="navbar">
+            <a href="#" onclick="nestedList()">Nested List</a>
+            <a href="#" onclick="imageList()">Image</a>
+            <a href="#" onclick="table()">Tables</a>
+        </div>
+        <div class="nested">
+            <h1 style="color: #224585;">NESTED LIST</h1>
+            <ol
+                style="border-radius: 10px; border: 1px solid #555; padding: 20px 50px 20px 50px; box-shadow: 0px 0px 5px #224585;">
+                <li style="font-weight: bold;">Fakultas Sains dan Teknologi</li>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>Informatika</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Teknik Mesin</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Teknik Elektro</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Teknik Industri</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Teknik Sipil</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Teknologi Pangan</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Agroteknologi</li>
+                    <dd>Jumlah : -</dd>
+                </ol style="font-weight: bold;">
+                <hr style="border-color: #224585;">
+                <li style="font-weight: bold;">Fakultas Bisnis Hukum dan Sosial</li>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>Manajemen</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Ilmu Komunikasi</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Administrasi Publik</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Akuntansi</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Hukum</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Bisnis Digital</li>
+                    <dd>Jumlah : -</dd>
+                </ol>
+                <hr style="border-color: #224585;">
+                <li style="font-weight: bold;">Fakultas Psikologi dan Ilmu Pendidikan</li>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>Psikologi</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Pendidikan Guru PAUD</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Pendidikan Guru SD</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Pendidikan Bahasa Inggris</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Pendidikan IPA</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Pendidikan Teknologi Informasi</li>
+                    <dd>Jumlah : -</dd>
+                </ol>
+                <hr style="border-color: #224585;">
+                <li style="font-weight: bold;">Fakultas Agama Islam</li>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>Pendidikan Agama Islam</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Pendidikan Bahasa Arab</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Pendidikan Guru MI</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Perbankan Syariah</li>
+                    <dd>Jumlah : -</dd>
+                </ol>
+                <hr style="border-color: #224585;">
+                <li style="font-weight: bold;">Fakultas Ilmu Kesehatan</li>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>Pendidikan Profesi Bidan</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Teknologi Laboratorium Medis</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Manajemen Informasi Kesehatan</li>
+                    <dd>Jumlah : -</dd>
+                    <li>Fisioterapi</li>
+                    <dd>Jumlah : -</dd>
+                </ol>
+            </ol>
+        </div>
+
+    </div>
+
+
+    <script>
+        function nestedList() {
+            let a = document.getElementsByTagName('a');
+            for (let i = 0; i < a.length; i++) {
+                a[i].style.backgroundColor = '#333';
+            }
+            document.getElementById('nestedList').style.backgroundColor = '#555';
+
+            document.getElementById("content").innerHTML = `
+            <div class="nested">
+                <div class="navbar">
+                    <a href="#" onclick="nestedList()" style="background-color: #555;">Nested List</a>
+                    <a href="#" onclick="imageList()">Image</a>
+                    <a href="#" onclick="table()">Tables</a>
+                </div>
+                <h1 style="color: #224585;">NESTED LIST</h1>
+                <ol style="border-radius: 10px; border: 1px solid #555; padding: 20px 50px 20px 50px; box-shadow: 0px 0px 5px #224585;">
+                    <li style="font-weight: bold;">Fakultas Sains dan Teknologi</li>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>Informatika</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Teknik Mesin</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Teknik Elektro</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Teknik Industri</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Teknik Sipil</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Teknologi Pangan</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Agroteknologi</li>
+                        <dd>Jumlah : -</dd>
+                    </ol>
+                    <hr style="border-color: #224585;">
+                    <li style="font-weight: bold;">Fakultas Bisnis Hukum dan Sosial</li>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>Manajemen</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Ilmu Komunikasi</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Administrasi Publik</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Akuntansi</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Hukum</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Bisnis Digital</li>
+                        <dd>Jumlah : -</dd>
+                    </ol>
+                    <hr style="border-color: #224585;">
+                    <li style="font-weight: bold;">Fakultas Psikologi dan Ilmu Pendidikan</li>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>Psikologi</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Pendidikan Guru PAUD</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Pendidikan Guru SD</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Pendidikan Bahasa Inggris</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Pendidikan IPA</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Pendidikan Teknologi Informasi</li>
+                        <dd>Jumlah : -</dd>
+                    </ol>
+                    <hr style="border-color: #224585;">
+                    <li style="font-weight: bold;">Fakultas Agama Islam</li>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>Pendidikan Agama Islam</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Pendidikan Bahasa Arab</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Pendidikan Guru MI</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Perbankan Syariah</li>
+                        <dd>Jumlah : -</dd>
+                    </ol>
+                    <hr style="border-color: #224585;">
+                    <li style="font-weight: bold;">Fakultas Ilmu Kesehatan</li>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>Pendidikan Profesi Bidan</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Teknologi Laboratorium Medis</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Manajemen Informasi Kesehatan</li>
+                        <dd>Jumlah : -</dd>
+                        <li>Fisioterapi</li>
+                        <dd>Jumlah : -</dd>
+                    </ol>
+                </ol>
+            </div>`;
+        }
+
+        function imageList() {
+            let a = document.getElementsByTagName('a');
+            for (let i = 0; i < a.length; i++) {
+                a[i].style.backgroundColor = '#333';
+            }
+            document.getElementById('imageList').style.backgroundColor = '#555';
+
+            document.getElementById("content").innerHTML = `
+            <div class="image">
+                <div class="navbar">
+                    <a href="#" onclick="nestedList()">Nested List</a>
+                    <a href="#" onclick="imageList()" style="background-color: #555;">Image</a>
+                    <a href="#" onclick="table()">Tables</a>
+                </div>
+                <h1 style="color: #224585;">IMAGE</h1>
+                <div class="container">
+                    <img src="https://umsida.ac.id/wp-content/uploads/2023/09/logo-umsida-scaled.jpg" alt="logo" width="200"
+                    style="margin-left: 20px;">
+                    <img src="https://umsida.ac.id/wp-content/uploads/2023/09/logo-umsida-scaled.jpg" alt="logo" width="200"
+                        style="margin-left: 20px; border: 6px solid #224585;">
+                    <img src="https://umsida.ac.id/wp-content/uploads/2023/09/logo-umsida-scaled.jpg" alt="logo" width="200"
+                        style="margin-left: 20px; border-radius: 20%; border: 6px solid #224585;">
+                    <img src="https://umsida.ac.id/wp-content/uploads/2023/09/logo-umsida-scaled.jpg" alt="logo" width="200"
+                        style="margin-left: 20px; border-radius: 50%; border: 6px solid #224585;">
+                </div>
+            </div>`;
+        };
+
+        function table() {
+            let a = document.getElementsByTagName('a');
+            for (let i = 0; i < a.length; i++) {
+                a[i].style.backgroundColor = '#333';
+            }
+            document.getElementById('table').style.backgroundColor = '#555';
+
+            document.getElementById("content").innerHTML = `
+            <div class="tables">
+            <div class="navbar">
+                <a href="#" onclick="nestedList()">Nested List</a>
+                <a href="#" onclick="imageList()">Image</a>
+                <a href="#" onclick="table()" style="background-color: #555;">Tables</a>
+            </div>
+            <h1 style="color: #224585;">TABLES</h1>
+            <h1 style="text-align: center; text-decoration: underline; margin: 0;">Jumlah Mahasiswa</h1>
+            <h1 style="text-align: center; text-decoration: underline; margin: 0 0 20px 0;">Universitas Muhammadiyah
+                Sidoarjo
+            </h1>
+            <div class="container"
+                style="margin: 0 10px 0 10px; padding: 20px; border: 1px solid #224585; border-radius: 10px; background-color: #fefefe; box-shadow: 0px 0px 5px #224585;">
+                <h2 style="text-align: center;">Fakultas Sains dan Teknologi</h2>
+                <table border="1" style="margin: 0 auto;">
+                    <tr>
+                        <th colspan="2" rowspan="2">MAHASISWA</th>
+                        <th colspan="7">PROGRAM STUDI</th>
+                        <th rowspan="2">TOTAL</th>
+                    </tr>
+                    <tr>
+                        <th>Informatika</th>
+                        <th>Teknik Mesin</th>
+                        <th>Teknik Elektro</th>
+                        <th>Teknik Industri</th>
+                        <th>Teknik Sipil</th>
+                        <th>Teknologi Pangan</th>
+                        <th>Agroteknologi</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Jenis Kelamin</td>
+                        <td>Laki-Laki</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Perempuan</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">JUMLAH MAHASISWA</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                </table>
+                <h2 style="text-align: center;">Fakultas Bisnis Hukum dan Sosial</h2>
+                <table border="1" style="margin: 0 auto;">
+                    <tr>
+                        <th colspan="2" rowspan="2">MAHASISWA</th>
+                        <th colspan="6">PROGRAM STUDI</th>
+                        <th rowspan="2">TOTAL</th>
+                    </tr>
+                    <tr>
+                        <th>Manajemen</th>
+                        <th>Ilmu Komunikasi</th>
+                        <th>Administrasi Publik</th>
+                        <th>Akuntansi</th>
+                        <th>Hukum</th>
+                        <th>Bisnis Digital</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Jenis Kelamin</td>
+                        <td>Laki-Laki</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Perempuan</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">JUMLAH MAHASISWA</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                </table>
+                <h2 style="text-align: center;">Fakultas Psikologi dan Ilmu Pendidikan</h2>
+                <table border="1" style="margin: 0 auto;">
+                    <tr>
+                        <th colspan="2" rowspan="2">MAHASISWA</th>
+                        <th colspan="6">PROGRAM STUDI</th>
+                        <th rowspan="2">TOTAL</th>
+                    </tr>
+                    <tr>
+                        <th>Psikologi</th>
+                        <th>Pendidikan Guru PAUD</th>
+                        <th>Pendidikan Guru SD</th>
+                        <th>Pendidikan Bahasa Inggris</th>
+                        <th>Pendidikan IPA</th>
+                        <th>Pendidikan Teknologi Informasi</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Jenis Kelamin</td>
+                        <td>Laki-Laki</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Perempuan</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">JUMLAH MAHASISWA</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                </table>
+                <h2 style="text-align: center;">Fakultas Agama Islam</h2>
+                <table border="1" style="margin: 0 auto;">
+                    <tr>
+                        <th colspan="2" rowspan="2">MAHASISWA</th>
+                        <th colspan="4">PROGRAM STUDI</th>
+                        <th rowspan="2">TOTAL</th>
+                    </tr>
+                    <tr>
+                        <th>Pendikan Agama Islam</th>
+                        <th>Pendidikan Bahasa Arab</th>
+                        <th>Pendidikan Guru MI/th>
+                        <th>Perbankan Syariah</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Jenis Kelamin</td>
+                        <td>Laki-Laki</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Perempuan</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">JUMLAH MAHASISWA</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                </table>
+                <h2 style="text-align: center;">Fakultas Ilmu Kesehatan</h2>
+                <table border="1" style="margin: 0 auto;">
+                    <tr>
+                        <th colspan="2" rowspan="2">MAHASISWA</th>
+                        <th colspan="4">PROGRAM STUDI</th>
+                        <th rowspan="2">TOTAL</th>
+                    </tr>
+                    <tr>
+                        <th>Pendidikan Profesi Bidan</th>
+                        <th>Teknologi Laboratorium Medis</th>
+                        <th>Manajemen Informasi Kesehatan</th>
+                        <th>Fisioterapi</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Jenis Kelamin</td>
+                        <td>Laki-Laki</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Perempuan</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">JUMLAH MAHASISWA</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>`;
+        }
+    </script>
+</body>
+
+</html>
